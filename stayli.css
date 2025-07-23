@@ -1,0 +1,386 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #000;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #111;
+  padding: 10px;
+  list-style: none;
+  z-index: 99;
+}
+
+.dropdown li a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 60px 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-image img {
+  max-height: 400px;
+  width: auto;
+}
+
+/* ===== PRODUCTS ===== */
+.products h2 {
+  font-size: 28px;
+  margin: 40px 0 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ===== CALCULATOR BANNER ===== */
+.calculator-banner {
+  background: linear-gradient(90deg, #0b84f3, #00c4ff);
+  color: #fff;
+  padding: 60px 0;
+}
+
+.calculator-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.calc-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.calc-img img {
+  max-width: 250px;
+  width: 100%;
+}
+
+/* ===== ABOUT + FEATURES ===== */
+.about-xwear {
+  display: flex;
+  gap: 40px;
+  padding: 60px 0;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 50%;
+}
+
+.features {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.feature img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  text-decoration: underline lightblue;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ===== BLOG SECTION ===== */
+.blog-section {
+  padding: 60px 0;
+}
+
+.blog-section h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.blog-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blog-card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.blog-card a {
+  color: #0b84f3;
+  text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 60px 20px;
+  font-size: 14px;
+}
+
+.footer .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-form button {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-form button img {
+  width: 16px;
+}
+.messengers a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.messengers a img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.contact-info li a:hover {
+  text-decoration: underline;
+}
+
+.legal-links {
+  margin-top: 15px;
+}
+
+.legal-links a {
+  color: #aaa;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 765px) {
+  .hero,
+  .calculator-banner .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .calc-text {
+    padding-right: 0;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 435px) {
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .product-grid,
+  .blog-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
